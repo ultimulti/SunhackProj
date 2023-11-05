@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8"
+        <meta name="description" content="Sudoku">
+        <title>Sudoku Sunhacks</title>
+        <br/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <label for="difficulty"><b>Difficulty: </b></label> 
+            <select name="difficulty" id="difficulty"> 
+                <option value="easy">Easy</option> 
+                <option value="medium">Medium</option> 
+                <option value="hard">Hard</option> 
+                <option value="expert">Expert</option> 
+            </select>
+        <div class="evaluation">
+            <div class="criteria">Mistake:</div>
+            <div class="criteria">Score:</div>
+            <div class="criteria">Timer:</div>
+        </div>
+        <br/>
+        
+        <div class="table-cover">
+            <div class = "grid_cover">
+                <div class = "grid-container" id = "grid-container">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                    <div class="grid-item">7</div>
+                    <div class="grid-item">8</div>
+                    <div class="grid-item">9</div>
+                </div>
+                <div class = "grid-container" id = "grid-container">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                    <div class="grid-item">7</div>
+                    <div class="grid-item">8</div>
+                    <div class="grid-item">9</div>
+                </div>
+                <div class = "grid-container" id = "grid-container">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                    <div class="grid-item">7</div>
+                    <div class="grid-item">8</div>
+                    <div class="grid-item">9</div>
+                </div>
+                <div class = "grid-container" id = "grid-container">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                    <div class="grid-item">7</div>
+                    <div class="grid-item">8</div>
+                    <div class="grid-item">9</div>
+                </div>
+                <div class = "grid-container" id = "grid-container">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                    <div class="grid-item">7</div>
+                    <div class="grid-item">8</div>
+                    <div class="grid-item">9</div>
+                </div>
+                <div class = "grid-container" id = "grid-container">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                    <div class="grid-item">7</div>
+                    <div class="grid-item">8</div>
+                    <div class="grid-item">9</div>
+                </div>
+                <div class = "grid-container" id = "grid-container">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                    <div class="grid-item">7</div>
+                    <div class="grid-item">8</div>
+                    <div class="grid-item">9</div>
+                </div>
+                <div class = "grid-container" id = "grid-container">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                    <div class="grid-item">7</div>
+                    <div class="grid-item">8</div>
+                    <div class="grid-item">9</div>
+                </div>
+                <div class = "grid-container" id = "grid-container">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                    <div class="grid-item">7</div>
+                    <div class="grid-item">8</div>
+                    <div class="grid-item">9</div>
+                </div>
+            </div>
+            <div class="board" id="input-selector-board">
+                <table>
+                    <tr>
+                        <td id="input-selector-1">1</td>
+                        <td id="input-selector-2">2</td>
+                        <td id="input-selector-3">3</td>
+                    </tr>
+                    <tr>
+                        <td id="input-selector-4">4</td>
+                        <td id="input-selector-5">5</td>
+                        <td id="input-selector-6">6</td>
+                    </tr>
+                    <tr>
+                        <td id="input-selector-7">7</td>
+                        <td id="input-selector-8">8</td>
+                        <td id="input-selector-9">9</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
