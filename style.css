@@ -1,0 +1,11 @@
+.main-grid {
+    border: 5px double black;
+    left: 20%;
+    right: 20%;
+    border-collapse: collapse;
+}
+
+.cell {
+    border: 2px solid #800000;
+    margin: 5px;
+}
