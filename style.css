@@ -1,3 +1,6 @@
+.table-cover {
+    display: flex;
+}
 
 .grid_cover{
     display: grid;
